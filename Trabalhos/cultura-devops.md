@@ -6,7 +6,7 @@
    1. Qual o estagio de Maturidade de cultura Devops se encotra sua empresa/equipe baseado no material apresentado em aula e os artigos?
    2. Descreva os maiores problemas na cultura da empresa para atingir o '3 ways'.
    3. Quais mudanças e em qual ordem você implementaria para que seja uma empresa Devops?
-   4. Pontue entre 1 a 5 os destaques de cada uma das 2 maneiras(Fluxo e Feedback) e na medida do possivel, justifique:
+   4. Pontue entre 1 a 5(1 nada implantado e resistência e 5 Tudo funcionando perfeitamente e time dando valor) os destaques abaixo e na medida do possivel, justifique:
       1. Tornar o trabalho visível
       2. Limitar o trabalho em andamento (WIP) 
       3. Reduzir o tamanho do lote de trabalho 
