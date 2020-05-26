@@ -36,4 +36,18 @@
     ```
 18. Para instalar o docker execute o comando `curl -sSL https://get.docker.com/ | sudo sh`
 19. O docker daemon precisa de permissão para aceitar comandos do usuario padrão. O comando `sudo usermod -aG docker ubuntu` adiciona o ususario principal da mauqina a utilizar o Docker.
-    
+20. Agora vamos criar o Bucket S3 que irá receber todos os arquivos de configuração durante o curso. Para tal, abra uma aba do console AWS. Clique em serviços no canto superior esquerdo e pesquisa e clique em S3.
+21. Clique em 'Criar bucket'
+    ![](img/s3CreateBucket.png)
+22. De o nome do bucket de `base-config-<SEU RM>` e clique em `Criar`.
+    ![](img/createBucket.png)
+23. Devolta para a linha de comando do CLoud 9. Execute o comando para criar a chave ssh que será utilizada em todos os exercicios e já coloca-la no lugar correto.
+   ```
+    aws --region us-east-1 ec2 \
+    create-key-pair \
+    --key-name "fiap-lab" \
+    | \
+    jq -r ".KeyMaterial" > ~/.ssh/fiap-lab.pem   
+   ```
+24. Execute o comando `chmod 400 ~/.ssh/fiap-lab.pem` para que a chave tenha a permissão correta.
+25. Execute o comando `aws s3 cp ~/.ssh/fiap-lab.pem s3://base-config-<SEU RM>/instance-need/keys/` para copiar a chave que criou para o seu bucket de configurações do S3.

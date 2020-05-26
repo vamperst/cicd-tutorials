@@ -1,0 +1,1 @@
+## Cloudformation 1.1 - EC2 Standalone
