@@ -18,7 +18,7 @@
 12. Com a instância selecionada clique em 'Actions'no topo da página. Selecione `Instance Settings` e clique em `View/Change User Data`
     ![](img/path-to-user-data.png)
 13. Esse script que apareceu roda quando a instância é iniciada.
-    ![](user-data-ec2-panel.png)
+    ![](img/user-data-ec2-panel.png)
 14. Se forem no IDE no arquivo EC2Instance.yaml que alterou, verá entre as linhas 66 e 76 que o script estava direto no códido do cloudformation.
     ![](img/user-data-code.png)
 15. Após explorar o que quiser. Delete a stack `ec2-nginx-user-data` do cloudformation.
