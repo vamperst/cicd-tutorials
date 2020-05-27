@@ -52,3 +52,4 @@
 36. Após a criação com sucesso da stack foi criado uma instância e uma chave PEM que foi guardada no S3 em `base-config-<SEU RM>/pem/MyKey01.pem`
     ![](img/s3-pem-lambda.png)
 37. A chave foi criada pela função lambda chamada pelo cloudformation como custom resource.
+38. Delete a stack após olhar tudo que desejava.
