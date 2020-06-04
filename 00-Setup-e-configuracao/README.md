@@ -26,7 +26,7 @@
 14. Execute o comando `cd 00-Setup-e-configuracao` para entrar na pasta com os scripts de Configuração.
 15. Precisamos aumentar o tamanho do volume(HD) do cloud9. Para isso execute o comando  `sh resize.sh`
    ![img/resizeEBS](img/resizeEBS.png)
-16. Para facilitar a criação e updates manualmente das stacks do cloudformation vamos utilizar o plugin 'cfn-create-or-update'. Para instalr utilize o comando `npm install cfn-create-or-update`
+16. Para facilitar a criação e updates manualmente das stacks do cloudformation vamos utilizar o plugin 'cfn-create-or-update'. Para instalr utilize o comando `npm install -g cfn-create-or-update`
 17. Vamos utlizar o ansible como gerenciador de configuração. Para instalar utlize os comandos abaixo:
     ``` shell
       sudo apt-get update -y
