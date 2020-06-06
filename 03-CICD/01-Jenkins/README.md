@@ -1,4 +1,4 @@
-## Gerenciamento de configuração 3.1 - Jenkins
+## CICD 3.1 - Jenkins
 
 1. Execute o comando `cd ~/environment` para voltar ao diretório principal
 2. Para clonar o repozitório do exercico utilize o comando `git clone https://github.com/vamperst/exercise-jenkins.git`
