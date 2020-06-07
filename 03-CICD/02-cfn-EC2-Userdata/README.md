@@ -1,11 +1,11 @@
-## CICD 3.1 - Cloudformation - EC2-UserData
+## CICD 3.2 - Cloudformation - EC2-UserData
 
 1. Inicialmente vamos criar as ROLES que iremos utilizar em todos os exercicios com CICD e cloudformation. Para isso entre na pasta com os templates utilizando o comando `cd ~/environment/cicd-tutorials/base-templates/`
 2. Execute o comando `cfn-create-or-update --region us-east-1 --stack-name roles-cicd --wait --template-body file://basic-iam-roles.yaml  --capabilities CAPABILITY_NAMED_IAM` para criar as roles.
 3. Execute o comando `cd ~/environment` para voltar ao diretório principal.
 4. Em outra aba do navegador faça o fork para sua conta do github do repositório <https://github.com/vamperst/exercise-ec2-cloudformation>
 5. De volta ao terminal do cloud9 apague o projeto do repositório que acabou de fazer fork e baixe o da sua conta com os comandos abaixo. Não esqueça de adicionar seu login do github ao segundo comando:
-   ```
+   ``` shell
    rm -rf ~/environment/exercise-ec2-cloudformation
    git clone https://github.com/<SEU LOGIN NO GITHUB>/exercise-ec2-cloudformation.git
    ```
@@ -23,7 +23,7 @@
 ![](img/gitcommit.png)
 
 10. Em outra aba do navegador entre no serviço `CodePipeline` do console AWS.
-11. Clique em `Criar pipeline` no canto supeiror direito
+11. Clique em `Criar pipeline` no canto superiror direito
    ![](img/clickcreatepipe.png)
 
 11. De o nome de `cd-ec2-userdata` ao pipeline, clique no checkbox e clique em 'próximo'
