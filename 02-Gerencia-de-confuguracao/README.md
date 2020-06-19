@@ -5,7 +5,7 @@
 3. Entre na pasta do exercício com `cd exercise-ec2-ansible-nginx`
 4. Primeiramente vamos validar o template cloudformation e quais permissões ele precisa com o comando `aws cloudformation validate-template --template-body file://ec2-cfn.yaml`
    ![](img/validate-cfn.png)
-5. Para ser executado o template precisa da permissão CAPABILITY_NAMED_IAM. Então para executar o template utilize o comando `ccfn-create-or-update --stack-name ec2-ansible --template-body file://ec2-cfn.yaml  --capabilities CAPABILITY_NAMED_IAM --wait --region us-east-1`. O comando levará um tempo para executar e enquanto isso o terminal ficará travado. Caso queira pode acompanhar pelo painel do cloudformation.
+5. Para ser executado o template precisa da permissão CAPABILITY_NAMED_IAM. Então para executar o template utilize o comando `cfn-create-or-update --stack-name ec2-ansible --template-body file://ec2-cfn.yaml  --capabilities CAPABILITY_NAMED_IAM --wait --region us-east-1`. O comando levará um tempo para executar e enquanto isso o terminal ficará travado. Caso queira pode acompanhar pelo painel do cloudformation.
    ![](img/cfn-create1.png)
 6. Para ter acesso ao ip publico da instância criada execute o comando `aws cloudformation describe-stacks --stack-name ec2-ansible --query "Stacks[0].Outputs[?OutputKey=='PublicIP'].OutputValue" --output text`. Esse comando já esta fazendo o filtro no Json para devolver apenas a informação desejada. Caso queira ver o json de retorno completo utilize o comando `aws cloudformation describe-stacks --stack-name ec2-ansible`. Copie o ip publico da instancia.
 7. No IDE do cloud9 abra o arquivo `hosts` para o caminho `fiap-lab/exercise-ec2-ansible-nginx` , altere a linha 4 colocando o ip publico copoado e salve.
