@@ -1,3 +1,5 @@
+## Conteiners 4.2 - Dockerfile
+
 docker inspect ubuntu-teste | jq '.[] | .NetworkSettings | .Networks | .bridge | .IPAddress'| sed 's/"//g'
 1. Crie uma nova sessão em uma nova instancia em [play-with-docker](https://labs.play-with-docker.com)
 2. Dentro da instância execute o comando `git clone https://github.com/vamperst/pyhton-app-docker-test.git`

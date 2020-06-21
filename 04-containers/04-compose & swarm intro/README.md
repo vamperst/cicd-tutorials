@@ -1,3 +1,5 @@
+## Conteiners 4.4 - COmpose & Swarm Intro
+
 1. Acesse via ssh o 'swarm-manager-1', e execute o comando `git clone https://github.com/vamperst/python-redis-docker-compose-intro.git`
 ![img/gitclone.png](img/gitclone.png)
 2. Entre na pasta 'python-redis-docker-compose-intro' com o comando `cd python-redis-docker-compose-intro`

@@ -1,3 +1,4 @@
+## Conteiners 4.6 - Scale Failover, Node Label
 1. Acesse uma instancia manager via ssh. Vamos utilizar o mesmo projeto do ultimo exercicio. Caso não tenha, execute o comando `git clone https://github.com/vamperst/vote-docker-exemple.git`
 2. Entre na pasta do projeto com o comando `cd vote-docker-exemple`
 3. Suba a stack com o comando `docker stack deploy --compose-file docker-compose.yaml vote`
