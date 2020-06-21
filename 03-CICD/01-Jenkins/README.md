@@ -39,7 +39,7 @@
 20. Clique na aba `Disponíveis` no superior da tela. Após isso, pesquise e selecione os sequintes plugins:
     1.  AnsiColor
     2.  Blue Ocean
-    3.  Self-Organizing Swarm 
+    3.  Swarm 
     4.  Throttle Concurrent Builds
 
 ![](img/selectplugins.png)
