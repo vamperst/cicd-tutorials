@@ -37,3 +37,14 @@
     done
    ```
 9.  Para deletar a stack utilize o comando `aws cloudformation delete-stack --stack-name ecs-microservices`
+10. Utilize os comandos abaixo para deletar os target groups criados pelo script de deploy:
+    ``` shell
+    arnTargetGroup=$(aws elbv2 describe-target-groups --names posts  --query "TargetGroups[0].TargetGroupArn" --output text)
+    aws elbv2 delete-target-group --target-group-arn $arnTargetGroup 
+
+    arnTargetGroup=$(aws elbv2 describe-target-groups --names threads  --query "TargetGroups[0].TargetGroupArn" --output text)
+    aws elbv2 delete-target-group --target-group-arn $arnTargetGroup 
+
+    arnTargetGroup=$(aws elbv2 describe-target-groups --names users --query "TargetGroups[0].TargetGroupArn" --output text)
+    aws elbv2 delete-target-group --target-group-arn $arnTargetGroup 
+    ```

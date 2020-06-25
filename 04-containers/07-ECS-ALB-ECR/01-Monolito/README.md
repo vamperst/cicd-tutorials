@@ -56,4 +56,9 @@
    ```
 
 10. Para deletar a stack utilize o comando `aws cloudformation delete-stack --stack-name ecs-monolito`
+11. Utilize os comandos abaixo para deletar os target groups criados pelo script de deploy:
+    ``` shell
+    arnTargetGroup=$(aws elbv2 describe-target-groups --names api  --query "TargetGroups[0].TargetGroupArn" --output text)
+    aws elbv2 delete-target-group --target-group-arn $arnTargetGroup 
+    ```
 
