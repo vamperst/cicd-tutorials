@@ -1,5 +1,7 @@
 ## Conteiners 7.2 - ECS-ALB-ECR - MicroServices
 
+![](img/ecs-microservices-arch.png)
+
 
 1. No terminal do cloud9 execute o comando `cd ~/environment` para voltar a pasta principal.
 2. Utilize o comando `git clone https://github.com/vamperst/ecs-container-microservices-project.git` para baixar o reposítorio do exercício
