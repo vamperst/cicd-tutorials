@@ -1,5 +1,7 @@
 ## Conteiners 7.1 - ECS-ALB-ECR - Monolito
 
+![](img/ecs-mono-arch.png)
+
 
 1. No terminal do cloud9 execute o comando `cd ~/environment` para voltar a pasta principal.
 2. Utilize o comando `git clone https://github.com/vamperst/ecs-container-mono-project.git` para baixar o reposítorio do exercício
