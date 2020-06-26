@@ -33,7 +33,9 @@
    1. Github
    2. Cloudformation
    3. CodeBuild
+   
    ![](img/template-pipeline-trabalho.png)
+   
 5. Utilize o mesmo codebuild dos exercicios (build_cicd).
 6. A entrega consiste em um zip contendo:
    1. Os 2 buildspec.yml criados

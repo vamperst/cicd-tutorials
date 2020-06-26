@@ -17,7 +17,7 @@
    ``` 
 
 5. Após a criação da stack no cloudformation é hora de fazer deploy. Vamos precisar instalar o docker para tal. Execute os comando abaixo:
-``` shell
+``` bash
     # Install docker engine
     curl -Ssl  https://get.docker.com | sudo sh
     sudo groupadd docker
