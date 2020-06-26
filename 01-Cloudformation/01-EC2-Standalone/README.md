@@ -17,9 +17,9 @@
     ![](img/acknowledge-iam.png)
 
 12. O processo pode demorar alguns minutos pois a criação de um instance profile demora um pouco.
-13. Aguarde até que o status fique em `CREATE_COMPLATE`
+13. Aguarde até que o status fique em `CREATE_COMPLETE`
     ![](img/create-complete.png)
-14. Vá até a aba 'Respurces' que clique no link com o `Physical ID` da EC2Instance.
+14. Vá até a aba 'Resources' que clique no link com o `Physical ID` da EC2Instance.
     ![](img/resources.png)
 15. Ao clicar foi aberto o painel do Ec2 criado. Explore o quanto quiser
     ![](img/created-ec2.png)
