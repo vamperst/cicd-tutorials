@@ -51,7 +51,7 @@
     http://URL-COPIADA/api/posts/by-user/2
    ```
 9. Execute os comandos abaixo para deletar o serviço criado no ECS, caso contrario não é possivel deletar o cluster:
-   ``` shell
+   ``` bash
     nomeCluster=(`aws ecs list-clusters |jq -r .clusterArns[0] | rev | cut -d/ -f1 | rev`)
     service=(`aws ecs list-services --cluster $nomeCluster | jq -r .serviceArns[0]  | rev | cut -d/ -f1 | rev `)
     aws ecs delete-service --cluster $nomeCluster --service $service --force
@@ -59,7 +59,7 @@
 
 10. Para deletar a stack utilize o comando `aws cloudformation delete-stack --stack-name ecs-monolito`
 11. Utilize os comandos abaixo para deletar os target groups criados pelo script de deploy:
-    ``` shell
+    ``` bash
     arnTargetGroup=$(aws elbv2 describe-target-groups --names api  --query "TargetGroups[0].TargetGroupArn" --output text)
     aws elbv2 delete-target-group --target-group-arn $arnTargetGroup 
     ```
