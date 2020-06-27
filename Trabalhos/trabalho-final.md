@@ -45,6 +45,8 @@
 
 ### dicas
 1. Não se esqueça de adiiconar a variável `stackName` na configuração do code pipeline que chama o codebuild com o nome que deu para a stack na configuração do estagio cloudformation. Seguindo o exemplo dos exercicios da aula de CICD.
-2. Verifique se o codebuild esta como o modo privilégio da imagem no editor de ambiente selecionada. Verifique no codebuild `build_cicd` eeditar -> ambiente -> substituir imagem:
+2. Verifique se o codebuild esta como o modo privilégio da imagem no editor de ambiente selecionada. Verifique no codebuild `build_cicd` editar -> ambiente -> substituir imagem:
+
    ![](img/privilegio-codebuild-image.png)
+   
 3. se atente que o yml do cloudformation não esta na raiz da pasta, esta em infrastructure/ecs.yml
