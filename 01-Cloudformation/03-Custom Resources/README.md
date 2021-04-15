@@ -35,8 +35,9 @@
 23. Cole o código no IDE na aba da função lambda que acabou criar
     ![](img/lambda-ide-paste-code.png)
 24. No campo `Variáveis de ambiente` clique em `Gerenciar variáveis de ambiente`
-25. Clique em `Adicionar variáveis de ambiente`
-26. Adicione a chave `BUCKET` e o valor `base-config-<SEU RM>` e clique em salvar
+25. Clique de `deploy` para atualizar o lambda com a versão récem cirada
+26. Clique em `Adicionar variáveis de ambiente`
+27. Adicione a chave `BUCKET` e o valor `base-config-<SEU RM>` e clique em salvar
     ![](img/env-var-lambda.png)
 27. Clique em `Salvar` no canto superior direito.
 28. De volta ao terminal do cloud9 execute o comando `aws s3 cp custom_resource_cfn.yml s3://base-config-<SEU RM>/cfn/exercise-features-cloudformation/` para colocar o template do cloudformaiton no S3.
