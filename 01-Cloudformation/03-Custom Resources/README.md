@@ -40,11 +40,13 @@
 27. Adicione a chave `BUCKET` e o valor `base-config-<SEU RM>` e clique em salvar
     ![](img/env-var-lambda.png)
 27. Clique em `Salvar` no canto superior direito.
-28. De volta ao terminal do cloud9 execute o comando `aws s3 cp custom_resource_cfn.yml s3://base-config-<SEU RM>/cfn/exercise-features-cloudformation/` para colocar o template do cloudformaiton no S3.
-29. Abra uma aba para o `Cloudformation` e clique em `Create stack`
-30. Copie a URL do S3 do arquivo `custom_resource_cfn.yml` que acabou de subir, cole no campo `Amazon S3 URL` e clique em next
-31. De o nome de `custom-resources-ssh-ec2` a stack.
-32. Na aba da função lambda `ssh-key-gen` copie o ARN dela. Esta no canto superior direito da página.
+28. Ainda no painel do lambda clique na aba `configuração` e em seguida `editar`
+29. Altere o tempo limite para `1 min e 3 seg` e salve. Caso não faça isso sua função pode executar com falha por timeout.
+30. De volta ao terminal do cloud9 execute o comando `aws s3 cp custom_resource_cfn.yml s3://base-config-<SEU RM>/cfn/exercise-features-cloudformation/` para colocar o template do cloudformaiton no S3.
+31. Abra uma aba para o `Cloudformation` e clique em `Create stack`
+32. Copie a URL do S3 do arquivo `custom_resource_cfn.yml` que acabou de subir, cole no campo `Amazon S3 URL` e clique em next
+33. De o nome de `custom-resources-ssh-ec2` a stack.
+34. Na aba da função lambda `ssh-key-gen` copie o ARN dela. Esta no canto superior direito da página.
     ![](img/lambda-arn.png)
 33. Cole no campo `FunctionARN` na criação da stack. 
 34. Selecione uma VPC e uma Subnet
