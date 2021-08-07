@@ -1,6 +1,6 @@
 ## Exercio cultura Devops
 
-1. Baixe os artigos que estão na aula 1
+1. Baixe os artigos que estão em anexo
 2. Leia os 2 artigos do Gartner
 3. Escolham 2 empresas que membros do grupo trabalham (não precisa colocar o nome) e responda as perguntas abaixo para cada uma das empresas:
    1. Qual o estagio de Maturidade de cultura Devops se encotra sua empresa/equipe baseado no material apresentado em aula e os artigos?
@@ -17,5 +17,5 @@
       8. Resolver os problemas em conjunto para construir novos conhecimentos 
       9. Manter o controle de qualidade próximo da origem do trabalho 
       10. Otimizar o trabalho pensando na próxima etapa do fluxo 
-4. Submeta no portal da fiap as respostas do grupo em formato word.
+4. Submeta no Classrom as respostas do grupo em formato word.
 5. Expor em sala as respostas para discussão de possiveis soluções entre todos da turma.
